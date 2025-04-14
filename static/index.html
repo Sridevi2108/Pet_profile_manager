@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Profile Manager 🐶</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Pet Profile Manager</h1>
+    <form id="petForm">
+      <input type="text" id="petName" placeholder="Pet Name" required />
+      <select id="petType" required>
+        <option value="">Select Pet Type</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Bird">Bird</option>
+        <option value="Fish">Fish</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea id="petFact" placeholder="Something fun about your pet..." required></textarea>
+      <input type="file" id="petImage" accept="image/*" required />
+      <button type="submit">Add Pet</button>
+    </form>
+
+    <div id="cardContainer" class="card-container"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
